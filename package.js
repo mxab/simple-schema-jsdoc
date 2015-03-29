@@ -2,9 +2,9 @@ Package.describe({
   name: 'mxab:simple-schema-jsdoc',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: 'generates a json schema type that can be used for e.g. @typedef {{firstName:string,lastName:string}} Person',
+  summary: 'generates a json schema type',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/mxab/simple-schema-jsdoc.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
