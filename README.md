@@ -27,3 +27,5 @@ console.log("/** @typedef {%s} %s */", docString, "Person");
   }} Person
  */
 ```
+
+More examples: https://github.com/mxab/simple-schema-jsdoc-example
