@@ -17,6 +17,8 @@ var PersonSchema = new SimpleSchema({
 var docString = PersonSchema.jSDocType();
 
 console.log("/** @typedef {%s} %s */", docString, "Person");
+
+//result:
 /**
 @typedef {{
        firstName:(string|undefined),
