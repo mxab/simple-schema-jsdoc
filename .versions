@@ -4,8 +4,8 @@ check@1.0.5
 deps@1.0.7
 ejson@1.0.6
 json@1.0.3
-meteor@1.1.5
-mxab:simple-schema-jsdoc@0.0.1
+meteor@1.1.6
+mxab:simple-schema-jsdoc@0.1.1
 random@1.0.3
-tracker@1.0.6
+tracker@1.0.7
 underscore@1.0.3

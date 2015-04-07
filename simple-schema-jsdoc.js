@@ -1,7 +1,5 @@
 SimpleSchema.prototype._getTypeForKeys = function (keys, prefix) {
-  function indent(depth){
-    return _.chain(depth).range().map(function(){return "\t"}).value().join("")
-  }
+
   function getPrimititveType(v) {
     var primitiveType;
     if (v.type === Date) {
@@ -15,7 +13,7 @@ SimpleSchema.prototype._getTypeForKeys = function (keys, prefix) {
     }
     return primitiveType;
   }
-  var depth = prefix ? prefix.split(".").length : 0;
+
 
   var doc = _.chain(keys).map(function (key) {
 
@@ -24,7 +22,7 @@ SimpleSchema.prototype._getTypeForKeys = function (keys, prefix) {
 
     if (prefix) {
       fullPath = prefix + "." + key;
-      isArray = prefix.substr(prefix.length - 2, 2) === ".$";
+
     }
 
 
@@ -66,7 +64,7 @@ SimpleSchema.prototype._getTypeForKeys = function (keys, prefix) {
     return typeDoc
 
 
-  }.bind(this)).value().join(",\n"+indent(depth));
+  }.bind(this)).value().join(", ");
 
   return "{ "+ doc+" }";
 };
