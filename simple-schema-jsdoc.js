@@ -17,7 +17,7 @@ SimpleSchema.prototype._getTypeForKeys = function (keys, prefix) {
 
   var doc = _.chain(keys).map(function (key) {
 
-    var isArray = false;
+
     var fullPath = key;
 
     if (prefix) {
